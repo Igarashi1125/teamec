@@ -31,10 +31,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-ma
 		FROM 
 		 	mst_destination, tbl_purchase_history, mst_product
 		WHERE
-    	    tbl_purchase_history.user_id = #{userId}
-    	    AND tbl_purchase_history.status = 1
-    	    AND tbl_purchase_history.product_id = mst_product.id
-    	    AND tbl_purchase_history.destination_id = mst_destination.id
+			tbl_purchase_history.user_id = #{userId}
+			AND tbl_purchase_history.status = 1
+			AND tbl_purchase_history.product_id = mst_product.id
+			AND tbl_purchase_history.destination_id = mst_destination.id
+		 ORDER BY 
+			tbl_purchase_history.purchased_at desc
 	        
 	</select>
 	

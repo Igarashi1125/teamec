@@ -40,6 +40,6 @@ public interface MstDestinationMapper {
 	 * @param id 宛先情報ID
 	 * @return 削除件数
 	 */
-	@Update("update mst_destination set status = false where id = #{id}")
+	@Update("update mst_destination set status = 0 , updated_at = now() where id = #{id}")
 	int logicalDeleteById(int id);
 }

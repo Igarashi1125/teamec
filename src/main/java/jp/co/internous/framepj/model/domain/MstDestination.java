@@ -17,7 +17,7 @@ public class MstDestination {
 	private String address;
 	private boolean status;
 	private Timestamp createdAt;
-	private Timestamp updateAt;
+	private Timestamp updatedAt;
 	
 	public int getId() {
 		return id;
@@ -67,12 +67,13 @@ public class MstDestination {
 	public void setCreatedAt(Timestamp createdAt) {
 		this.createdAt = createdAt;
 	}
-	public Timestamp getUpdateAt() {
-		return updateAt;
+	public Timestamp getUpdatedAt() {
+		return updatedAt;
 	}
-	public void setUpdateAt(Timestamp updateAt) {
-		this.updateAt = updateAt;
+	public void setUpdatedAt(Timestamp updatedAt) {
+		this.updatedAt = updatedAt;
 	}
 	
+
 	
 }
